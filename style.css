@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Public+Sans&display=swap');
+/* 
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Public Sans', sans-serif;
+*/
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #D9D9D9;
+  font-family: 'Public Sans', sans-serif;
+  margin:0;
+}
+
+header {
+  background-color: #1E5959;
+  height: 100px;
+  position: relative;
+}
+
+.flower-left {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+nav {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.menu-link {
+  color: #D9D9D9;
+  /* remove underline */
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 15px;
+  line-height: 100px;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  text-transform: lowercase;
+  margin-top: 0;
+}
+
+section {
+  height: 96vh;
+  margin-top: 4vh;
+  /* border:2px solid red; */
+  padding: 2rem;
+  position: relative;
+}
+
+#hero {
+  height: 75vh;
+}
+
+#weddings {
+  background-color: #1E5959;
+  background-image: url("./assets/bw_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+#about {
+  background-color: #164773;
+}
+
+.light {
+  color: #D9D9D9;
+}
+
+.dark {
+  color: #1E5959;
+}
+
+/* set up for a big and small columns  */
+.big,
+.small {
+  display: inline-block;
+  vertical-align: middle;
+  /* border:2px solid aqua; */
+}
+
+.big {
+  width: 60%;
+}
+
+.small {
+  width: 38%;
+}
+
+.icons {
+  color: #164773;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.next {
+  text-align: right;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 20px;
+
+}
+
+.next-btn {
+  color: #1E5959;
+  background-color: #d9d9d9;
+  border: 1px solid #1e1e1e;
+}
+
+.next-btn:hover {
+  color: #d9d9d9;
+  background-color: #1e5959;
+}
+
+.slant-left {
+  transform: rotate(-30deg);
+}
+
+.socials {
+  text-align: center;
+  font-size: 2.25rem;
+  color: #164773;
+}
+
+.socials * {
+  /* this selects every element INSIDE any element with a class of socials  */
+  margin: 15px;
+}
+
+.big-btn {
+  text-align: center;
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  /* auto --> center horizontally  */
+  padding: 10px;
+  background-color: #164773;
+  color: #D9D9D9;
+  border: 2px solid #1E5959;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: ease-in-out 500ms;
+}
+
+.big-btn:hover {
+  background-color: #D9D9D9;
+  color: #164773;
+  width: 75%;
+}
+
+.big-btn:active {
+  border-color: white;
+  /* border-width: 4px; */
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.wedding-text {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.25rem;
+}
+
+.wedding-btns {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* select all the anchor tags that are INSIDE of the wedding-btns class */
+.wedding-btns a {
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 6px;
+  width: 165px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.light-btn {
+  color: #164773;
+  background-color: #d9d9d9;
+}
+
+.dark-btn {
+  background-color: #164773;
+  color: #d9d9d9;
+}
+
+.light-btn:hover {
+  background-color: #164773;
+  color: #d9d9d9;
+}
+
+.dark-btn:hover {
+  color: #164773;
+  background-color: #d9d9d9;
+}
+
+footer{
+  background-color: #1e5959;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this selects all three columns in the footer  */
+.col1, .col2, .col3{
+  width:100%;
+}
+
+.col1 > p, .col3 > p{
+  /* select any paragraph that is direct child of the col1 class */
+  margin:0 10px;
+}
+.col2 > p {
+  text-align: center;
+}
+.col3 a{
+  /* any anchor tag that is INSIDE of a thing with a class of col3 */
+  color: #d9d9d9;
+  text-decoration: none;
+}
+.col3 > p{
+  text-align: right;
+}
+
+input, textarea{
+  border:2px solid #164773;
+  border-radius: 4px;
+}
+
+#send_btn{
+  background-color: #164773;
+  padding:1rem;
+  color:#d9d9d9;
+  width:35%;
+  min-width: 100px;
+  max-width: 300px;
+  
+}
+.submit-btn{
+  text-align: right;
+  margin-right: 1.5rem;
+}
+
+#contact{
+  height:75vh;
+}
+
